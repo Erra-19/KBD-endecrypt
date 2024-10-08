@@ -11,7 +11,7 @@
         </thead>                                
         <tbody>
         @foreach($data as $item)
-        @if (is_array($item)) <!-- Check if $item is an array -->
+        @if (is_array($item))
         <tr>
             <td>{{ $item['NIM'] }}</td>
             <td>{{ $item['nama_lengkap'] }}</td>
@@ -28,7 +28,7 @@
             <td colspan="4" style="border: 0px;"><center><a href="{{ route('input') }}" class="btn btn-primary">Daftar Baru</a></center></td>
         </tr>
         <tr style="border: 0px;">            
-            <td colspan="4" style="border: 0px;"><center><a href="{{ route('clear.session') }}" class="btn btn-danger">Clear Session</a></center></td>
+            <td colspan="4" style="border: 0px;"><center><a href="{{ route('clear.session') }}" class="btn btn-danger">Hapus Daftar</a></center></td>
         </tr>
         </tbody>
     </table>
