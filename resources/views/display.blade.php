@@ -7,6 +7,7 @@
                 <th>Nama Lengkap</th>
                 <th>Kelas</th>
                 <th>Nomor Telpon</th>
+                <th>update</th>
             </tr>
         </thead>                                
         <tbody>
@@ -17,6 +18,13 @@
             <td>{{ $item['nama_lengkap'] }}</td>
             <td>{{ $item['kelas'] }}</td>
             <td>{{ $item['nomor_telpon'] }}</td>
+            <td>
+                <a href="{{ url('/input/update', $data['customer_id']) }}" 
+                class="btn btn-danger" 
+                style="margin-left: 40%;">
+                Update
+                </a>
+            </td>
         </tr>
     @else
         <tr>
