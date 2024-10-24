@@ -46,5 +46,21 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        const passwordInput = document.getElementById('password');
+        const togglePasswordButton = document.getElementById('toggle-password');
+    
+        togglePasswordButton.addEventListener('click', function() {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                togglePasswordButton.classList.add('fa-eye-slash');
+                togglePasswordButton.classList.remove('fa-eye');
+            } else {
+                passwordInput.type = 'password';
+                togglePasswordButton.classList.add('fa-eye');
+                togglePasswordButton.classList.remove('fa-eye-slash');
+            }
+        });
+    </script>
 </body>
 </html>
