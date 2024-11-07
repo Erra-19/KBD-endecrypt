@@ -1,0 +1,124 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5efd8; /* Lighter background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+/* Branding header */
+.header {
+    width: 100%;
+    max-width: 400px; /* Smaller max-width for mobile-first */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 10px; /* Reduce space between header and form */
+}
+
+.header .brand img {
+    width: 70%; /* Adjust to fit better */
+    height: auto;
+    max-height: 60px;
+}
+
+.header .tagline {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Login form container */
+.login-container {
+    background-color: #d6b692; /* Match container background */
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px rgba(71, 42, 40, 0.5);
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 320px;
+    width: 90%;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+.input-group input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.input-group input[readonly] {
+    color: #888;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 1px solid #999;
+}
+
+/* Confirmation button */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4f2f1a; /* Match header color */
+    color: white;
+    box-shadow: 3px 3px 0px rgba(71, 42, 40, 0.5);
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #714b31;
+    box-shadow: 3px 3px 0px rgba(79, 47, 26, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .header, .login-container {
+        max-width: 95%;
+    }
+
+    .header .tagline {
+        font-size: 12px;
+    }
+
+    .login-container h2 {
+        font-size: 13px;
+    }
+
+    .input-group input {
+        padding: 8px;
+    }
+
+    .button {
+        padding: 10px;
+    }
+}
